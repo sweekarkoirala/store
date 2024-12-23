@@ -6,7 +6,7 @@ mongoose
 .connect(`${config.get("MONGODB_URI")}/scatch`)
 .then(function(){
   dbgr("connected");
-  console.log("hi");
+  console.log("database connected");
 })
 .catch(function(err){
   console.log(err);
